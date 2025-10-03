@@ -10,31 +10,33 @@ public class T00 {
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
-            System.out.println("Bilangan pertama Genap");
-            if (b % 2 == 0) {
-                System.out.println("Bilangan pertama Genap");
-            } else {
-                System.out.println("Bilangan kedua Ganjil");
-            }
+            System.out.println(" Bilangan pertama: Genap");
         } else {
-            System.out.println("Bilangan kedua Ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
+        }
+        if (b % 2 == 0) {
+            System.out.println(" Bilangan kedua: Genap");
+        } else {
+            System.out.println(" Bilangan kedua: Ganjil");
         }
         if (a > b) {
-            System.out.println("bilangan pertama lebih besar");
+            System.out.println(" Bilangan pertama lebih besar ");
         } else {
-            if (a == b) {
-                System.out.println(" Kedua Bilangan sama besar ");
+            if (a < b) {
+                System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println("Bilangan Kedua lebih besar");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0 && b % 2 == 0) {
-            jumlah = a + b;
-            System.out.println("Hasil penjumlahan " + jumlah);
+        if (a % 2 == 0) {
+            if (b % 2 == 0) {
+                jumlah = a + b;
+                System.out.println("Hasil penjumlahan: " + jumlah);
+            }
         } else {
-            if (a % 2 == 1 && b % 2 == 1) {
+            if (b % 2 != 0) {
                 kali = a * b;
-                System.out.println("Hasil perkalian " + kali);
+                System.out.println("Hasil perkalian: " + kali);
             } else {
                 System.out.println(" Berbeda jenis");
             }
